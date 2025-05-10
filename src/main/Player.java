@@ -129,14 +129,14 @@ public class Player {
      */
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(name).append(", ").append(age);
+        StringBuilder strbuild = new StringBuilder();
+        strbuild.append(name).append(", ").append(age);
         if (!hand.isEmpty()) {
-            sb.append(", ");
+            strbuild.append(", ");
             for (int i = 0; i < hand.size(); i++) {
-                sb.append(hand.get(i).toString());
+                strbuild.append(hand.get(i).toString());
                 if (i < hand.size() - 1) {
-                    sb.append(", ");
+                    strbuild.append(", ");
                 }
             }
         }

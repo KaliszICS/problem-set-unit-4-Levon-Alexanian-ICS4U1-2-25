@@ -40,7 +40,7 @@ public class DiscardPile {
      * Gets all cards in the discard pile.
      * @return Array of cards in the discard pile
      */
-    public Card[] getCards() {
+    public Card[] getDiscardPile() {
         Card[] handArray = new Card[cards.size()];
         for (int i = 0; i < cards.size(); i++) {
             handArray[i] = cards.get(i);
@@ -101,13 +101,13 @@ public class DiscardPile {
         if (cards.isEmpty()) {
             return "";
         }
-        StringBuilder sb = new StringBuilder();
+        StringBuilder strbuild = new StringBuilder();
         for (int i = 0; i < cards.size(); i++) {
-            sb.append(cards.get(i).toString());
+            strbuild.append(cards.get(i).toString());
             if (i < cards.size() - 1) {
-                sb.append(", ");
+                strbuild.append(", ");
             }
         }
-        return sb.toString();
+        return strbuild.toString();
     }
 } 

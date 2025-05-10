@@ -35,7 +35,7 @@ A removeAll() method that returns an array of cards and removes them all from yo
 A toString() method that returns all of the cards in the format "Ace of hearts, King of Hearts, Queen of Hearts, Jack of Hearts, 9 of Spades."
 
 4. Player. 
-Should have two constructors:</br>
+Should have two constructors:
 The first Constructor should take a _name_ and _age_ and an array of cards which should be assigned to the hand.
 The second Constructor should take a _name_ and _age_ while creating a default empty hand of cards.
 Has getters for its name, age and hand (hand should return an array of cards).
